@@ -69,7 +69,7 @@ npx json-server --watch db.json --port 9999
 - 현재 배포방식을 변경할 예정입니다.
 - 조직 프로젝트의 배포와 같은 경우 비용이 발생함을 인지.
 
-배포 주소 예시: `https://vercel.com/seokjyans-projects/pocket-lab-fe`
+배포 주소: `https://pocket-lab-fe.vercel.app/`
 
 ---
 
