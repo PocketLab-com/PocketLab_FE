@@ -1,17 +1,19 @@
-// 빈 카드 사각형
-// components/atoms/CardFrame.js
+"use client";
+import { useState } from "react";
 
-export default function CardFrame({ children, onClick, selected }) {
-    return (
-        <div
-        onClick={onClick}
-        className={`w-32 h-48 border-2 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300 ${
-          selected ? 'border-blue-500 shadow-lg scale-105' : 'border-gray-300'
-        }`}
-        >
-            <div className="card">
-                <img src="/sol.jpg" className="card-img"/>
-            </div>
+export default function CardFrame({ front, back }) {
+  const [flipped, setFlipped] = useState(false);
+
+  return (
+    <div className="card" onClick={() => setFlipped(!flipped)}>
+      <div className={`card-inner ${flipped ? "flipped" : ""}`}>
+        <div className="card-face card-front">
+          <img src={front} className="card-img" />
         </div>
-    );
+        <div className="card-face card-back">
+          <img src={back} className="card-img" />
+        </div>
+      </div>
+    </div>
+  );
 }
