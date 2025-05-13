@@ -1,4 +1,5 @@
 "use client";
+import "./CardFrame.css";
 import { useState } from "react";
 
 export default function CardFrame({ front, back }) {
