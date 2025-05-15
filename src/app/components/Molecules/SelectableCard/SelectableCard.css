@@ -1,1 +1,26 @@
 /* Styles for SelectableCard */
+.selectable-card {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border 0.2s ease;
+}
+
+.selectable-card:hover {
+  border-color: #aaa;
+}
+
+.selectable-card.selected {
+  border-color: #ffca28;
+  box-shadow: 0 0 10px #ffca28;
+}
+
+.card-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

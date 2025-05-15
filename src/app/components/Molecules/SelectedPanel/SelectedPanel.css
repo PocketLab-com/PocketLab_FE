@@ -1,0 +1,18 @@
+.selected-panel {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+}
+
+.selected-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.selected-thumb {
+  width: 100%;
+  border: 1px solid #999;
+  border-radius: 8px;
+}

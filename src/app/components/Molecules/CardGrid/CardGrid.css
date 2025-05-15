@@ -1,1 +1,10 @@
 /* Styles for CardGrid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  gap: 12px;
+  padding: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 90vh;
+} 
