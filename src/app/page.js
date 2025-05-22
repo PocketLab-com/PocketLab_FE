@@ -1,5 +1,5 @@
-import CardCollection from "./components/Organisms/CardCollection";
+import DeckBuilder from "./components/DeckBuilder/Templates/MainLayout";
 
 export default function Home() {
-  return <CardCollection />;
+  return <DeckBuilder />;
 }
