@@ -1,0 +1,94 @@
+.desktopNavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* ---------- 상단 ---------- */
+.desktopTop {
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 10px 98px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.desktopLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.desktopMenu {
+  display: flex;
+  padding: 0px 40px;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 0;
+  align-self: stretch;
+  list-style: none;
+  margin: 0;
+}
+
+.desktopMenuItem {
+  display: flex;
+  height: 23px;
+  padding: 0px 4px 0px 10px;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.desktopRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+/* ---------- 하단 ---------- */
+.desktopBottom {
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0px 160px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  background: #fff;
+}
+
+.desktopSubMenu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.desktopSubMenuItem {
+  display: flex;
+  padding: 25px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.desktopArrow {
+  font-size: 12px;
+  margin-left: 4px;
+}

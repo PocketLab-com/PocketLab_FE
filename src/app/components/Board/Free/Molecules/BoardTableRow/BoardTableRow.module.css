@@ -1,0 +1,20 @@
+.boardTableRow {
+    display: table-row;
+}
+
+.boardTableRowCell {
+    display: table-cell;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.boardTableRowTitle {
+    font-weight: bold;
+}
+
+.boardTableRowLikes,
+.boardTableRowViews,
+.boardTableRowAuthor,
+.boardTableRowCreatedAt {
+    text-align: center;
+}

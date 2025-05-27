@@ -11,9 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="vsc-initialized">
         <TiltInitializer />
-        <div className="wrapper">
-          {children}
-        </div>
+        {children} 
       </body>
     </html>
   );
