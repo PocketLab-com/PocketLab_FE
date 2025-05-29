@@ -19,13 +19,13 @@ export default function NavBarMobile() {
       </div>
       <div className={styles.mobileBottom}>
         <button className={styles.mobileButton}>
-          <div className={styles.mobileTitleText}>자유게시판</div>
+          <div className={styles.mobileSubTitleText}>자유게시판</div>
         </button>
         <button className={styles.mobileButton}>
-          <div className={styles.mobileTitleText}>덱가이드</div>
+          <div className={styles.mobileSubTitleText}>덱가이드</div>
         </button>
         <button className={styles.mobileButton}>
-          <div className={styles.mobileTitleText}>자랑게시판</div>
+          <div className={styles.mobileSubTitleText}>자랑게시판</div>
         </button>
       </div>
     </nav>

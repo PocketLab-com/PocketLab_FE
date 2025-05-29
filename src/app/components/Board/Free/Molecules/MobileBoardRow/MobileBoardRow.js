@@ -2,19 +2,38 @@
 
 import MobileBoardRowStyles from './MobileBoardRow.module.css';
 
-export default function MobileBoardRow({ row }) {
+export default function MobileBoardRow({ row, isNotice }) {
   return (
-    <div className={MobileBoardRowStyles.row}>
-      <div className={MobileBoardRowStyles.title}>{row.title}</div>
-      <div className={MobileBoardRowStyles.infoRow}>
-        <span className={MobileBoardRowStyles.author}>{row.author}</span>
-        <span className={MobileBoardRowStyles.date}>{row.createdAt}</span>
+    //  <div className={MobileBoardRowStyles.row}>
+    //   <div className={MobileBoardRowStyles.title}>{row.title}</div>
+    //   <div className={MobileBoardRowStyles.infoRow}>
+    //     <span className={MobileBoardRowStyles.author}>{row.author}</span>
+    //     <span className={MobileBoardRowStyles.date}>{row.createdAt}</span>
+    //     <div className={MobileBoardRowStyles.right}>
+    //       <span className={MobileBoardRowStyles.iconGroup}>
+    //         <HeartIcon /> <span className={MobileBoardRowStyles.iconValue}>{row.likes}</span>
+    //       </span>
+    //       <span className={MobileBoardRowStyles.iconGroup}>
+    //         <ViewIcon /> <span className={MobileBoardRowStyles.iconValue}>{row.views}</span>
+    //       </span>
+    //     </div>
+    //   </div>
+    // </div>
+    <div className={`${MobileBoardRowStyles.row} ${isNotice ? MobileBoardRowStyles.notice : ""}`}>
+      <div className={MobileBoardRowStyles.title}>{isNotice ? <span className={MobileBoardRowStyles.badge}>공지</span> : ""}{row.title}</div>
+      <div className={MobileBoardRowStyles.content}>
+        <div className={MobileBoardRowStyles.left}>
+          <div className={MobileBoardRowStyles.nick}>{row.author}</div>
+          <div className={MobileBoardRowStyles.date}>{row.createdAt}</div>
+        </div>
         <div className={MobileBoardRowStyles.right}>
           <span className={MobileBoardRowStyles.iconGroup}>
-            <HeartIcon /> <span className={MobileBoardRowStyles.iconValue}>{row.likes}</span>
+            <HeartIcon />
+            <span className={MobileBoardRowStyles.iconValue}>{row.likes}</span>
           </span>
           <span className={MobileBoardRowStyles.iconGroup}>
-            <ViewIcon /> <span className={MobileBoardRowStyles.iconValue}>{row.views}</span>
+            <ViewIcon />
+            <span className={MobileBoardRowStyles.iconValue}>{row.views}</span>
           </span>
         </div>
       </div>
@@ -25,7 +44,7 @@ export default function MobileBoardRow({ row }) {
 // 아이콘은 인라인 SVG로 간단하게
 function HeartIcon() {
   return (
-    <svg width="16" height="16" fill="#888" viewBox="0 0 24 24">
+    <svg width="14" height="14" aspect-ratio="1/1" fill="#888" viewBox="0 0 24 24">
       <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
       2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81
       14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 

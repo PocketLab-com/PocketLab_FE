@@ -1,4 +1,134 @@
 .row {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.notice {
+  background: #F2F8FF;
+}
+
+.title {
+  display: flex;
+  min-width: 100px;
+  max-width: 600px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.content {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.badge {
+  display: flex;
+  padding: 5px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 3px;
+  background: #ABABAB;
+  /* Text styles */
+  color: #FFF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.left {
+  display: flex;
+  height: 19px;
+  align-items: center;
+}
+
+.nick {
+  display: flex;
+  min-width: 30px;
+  max-width: 130px;
+  padding: 5px 0px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  /* Text styles */
+  color: #7C7C7C;
+  font-family: Pretendard;
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.date {
+  display: flex;
+  width: 77px;
+  min-width: 60px;
+  max-width: 200px;
+  padding: 5px 5px;
+  align-items: center;
+  align-self: stretch;
+  /* Text styles */
+  color: #7C7C7C;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.right {
+  display: flex;
+  height: 19px;
+  align-items: center;
+}
+
+.iconGroup {
+  display: flex;
+  min-width: 40px;
+  max-width: 80px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  align-self: stretch;
+}
+
+.iconValue {
+  color: #7C7C7C;
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+
+
+
+
+
+/* .row {
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #ececec;
@@ -13,7 +143,6 @@
   font-weight: 700;
   color: #444;
   margin-bottom: 4px;
-  /* 여러 줄 자르면 ... 표시 */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -47,4 +176,4 @@
 
 .iconValue {
   font-size: 13px;
-}
+} */

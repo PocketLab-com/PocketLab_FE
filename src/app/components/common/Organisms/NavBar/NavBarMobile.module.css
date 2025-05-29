@@ -1,6 +1,6 @@
 .mobileNavbar {
     display: flex;
-    width: 768px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -14,25 +14,16 @@
     align-self: stretch;
 }
 
-.mobileLogo {
+.mobileLeft {
     display: flex;
-    padding: 0px 10px;
     align-items: center;
-    gap: 10px;
     flex: 1 0 0;
-    align-self: stretch;
 }
 
 .mobileReturn {
     width: 40px;
     height: 40px;
     aspect-ratio: 1/1;
-}
-
-.mobileLeft {
-    display: flex;
-    align-items: center;
-    flex: 1 0 0;
 }
 
 .mobileTitle {
