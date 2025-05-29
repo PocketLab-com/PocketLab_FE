@@ -14,3 +14,20 @@
   /* gap도 마찬가지 */
   gap: clamp(40px, 5vw, 60px);
 }
+
+.infoBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.boardTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+}
+
+.count {
+}

@@ -1,11 +1,12 @@
 import styles from './NavBarMobile.module.css';
+import Button from '@/app/components/common/Atoms/Button/Button';
 
 export default function NavBarMobile() {
   return (
     <nav className={styles.mobileNavbar}>
       <div className={styles.mobileTop}>
         <div className={styles.mobileLeft}>
-          <img className={styles.mobileImg} src="/Return.png" alt="return" />
+          <Button className={styles.mobileReturn}>〈</Button>
           <div className={styles.mobileTitle}>
             <div className={styles.mobileTitleText}>커뮤니티</div>
           </div>

@@ -1,13 +1,15 @@
 // src/app/components/BoardFree/Templates/FreeBoardPageTemplate/FreeBoardPageTemplate.js
-
-import NavBar from "@/app/components/common/Organisms/NavBar/NavBar";
-import FreeBoardListTable from "@/app/components/Board/Free/Organisms/FreeBoardListTable/FreeBoardListTable";
+"use client";
+import useIsMobile from "@/app/hook/useIsMobile";
+import FreeBoardDesktop from "./FreeBoearDesktop";
+import FreeBoardMobile from "./FreeBoardMobile";
 
 export default function FreeBoardPageTemplate() {
+  const isMobile = useIsMobile();
+
   return (
-    <div>
-      <NavBar />
-      <FreeBoardListTable />
+    <div className="free-board-page-template">
+      {isMobile ? <FreeBoardMobile /> : <FreeBoardDesktop />}
     </div>
   );
 }

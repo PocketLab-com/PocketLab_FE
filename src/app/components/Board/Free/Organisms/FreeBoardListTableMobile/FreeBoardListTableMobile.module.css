@@ -1,0 +1,8 @@
+.freeBoardListTableMobile {
+    display: flex;
+    padding: 30px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+}

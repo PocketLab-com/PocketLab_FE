@@ -1,0 +1,50 @@
+.row {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  padding: 18px 10px 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 4px;
+  /* 여러 줄 자르면 ... 표시 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author, .date {
+  font-size: 13px;
+  color: #888;
+  margin-right: 8px;
+}
+
+.right {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.iconGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #888;
+}
+
+.iconValue {
+  font-size: 13px;
+}
