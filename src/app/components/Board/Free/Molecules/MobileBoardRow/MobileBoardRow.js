@@ -4,21 +4,6 @@ import MobileBoardRowStyles from './MobileBoardRow.module.css';
 
 export default function MobileBoardRow({ row, isNotice }) {
   return (
-    //  <div className={MobileBoardRowStyles.row}>
-    //   <div className={MobileBoardRowStyles.title}>{row.title}</div>
-    //   <div className={MobileBoardRowStyles.infoRow}>
-    //     <span className={MobileBoardRowStyles.author}>{row.author}</span>
-    //     <span className={MobileBoardRowStyles.date}>{row.createdAt}</span>
-    //     <div className={MobileBoardRowStyles.right}>
-    //       <span className={MobileBoardRowStyles.iconGroup}>
-    //         <HeartIcon /> <span className={MobileBoardRowStyles.iconValue}>{row.likes}</span>
-    //       </span>
-    //       <span className={MobileBoardRowStyles.iconGroup}>
-    //         <ViewIcon /> <span className={MobileBoardRowStyles.iconValue}>{row.views}</span>
-    //       </span>
-    //     </div>
-    //   </div>
-    // </div>
     <div className={`${MobileBoardRowStyles.row} ${isNotice ? MobileBoardRowStyles.notice : ""}`}>
       <div className={MobileBoardRowStyles.title}>{isNotice ? <span className={MobileBoardRowStyles.badge}>공지</span> : ""}{row.title}</div>
       <div className={MobileBoardRowStyles.content}>
