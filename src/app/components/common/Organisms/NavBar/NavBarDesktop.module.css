@@ -1,15 +1,90 @@
 .desktopNavbar {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  height: 78px;
+  padding: 20px 98px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
   align-self: stretch;
-  width: 100%;
-  background: #fff;
-  box-sizing: border-box;
+  border-bottom: 1px solid #F1F1F1;
+  /* text styles */
+  color: #3E3E3E;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-/* ---------- 상단 ---------- */
-.desktopTop {
+.left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+  color: #0080FF;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.midItemDrop {
+  display: flex;
+  min-width: 101px;
+  height: 23px;
+  padding: 0px 4px 0px 10px;
+  align-items: center;
+  gap: 6px;
+}
+
+.midItem {
+  display: flex;
+  min-width: 101px;
+  height: 19px;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.loginButton {
+  display: flex;
+  width: 97px;
+  height: 19px;
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.HeaderButton {
+  /* Button styles */
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+/* .desktopTop {
   display: flex;
   width: 100%;
   max-width: 1920px;
@@ -54,9 +129,8 @@
   gap: 24px;
   flex: 1 0 0;
   align-self: stretch;
-}
-
-/* ---------- 하단 ---------- */
+} */
+/* 
 .desktopBottom {
   display: flex;
   width: 100%;
@@ -91,4 +165,4 @@
 .desktopArrow {
   font-size: 12px;
   margin-left: 4px;
-}
+} */
