@@ -1,0 +1,55 @@
+/* src/app/components/common/Atoms/InputWithIcon/InputWithIcon.module.css */
+/* .searchBox {
+    display: flex;
+    width: 264px;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+    border: none;
+    background: #F8F8F8;
+
+    color: #B2B2B2;
+    text-align: left;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.16px;
+} */
+
+.searchBox {
+    display: flex;
+    width: 264px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    background: #F8F8F8;
+}
+
+.searchInput {
+    border-radius: 10px;
+    border: none;
+    background: #F8F8F8;
+
+    color: #B2B2B2;
+    text-align: left;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.16px;
+}
+
+.searchButton {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    border: none;
+    background: none;
+}

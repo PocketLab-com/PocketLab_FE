@@ -27,7 +27,7 @@ export default function FreeBoardListTable({ posts }) {
 
   return (
     <section className={styles.boardSection}>
-      <Notice />
+      {/* <Notice /> */}
       <BoardTableHeader />
       <div className={styles.infoBar}>
         <span>게시물 총 {posts.length}개</span>

@@ -1,18 +1,23 @@
-.boardSection {
+/* .boardSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: stretch;
 
-  /* clamp(min, fluid, max)로 자연스러운 변화 */
-  /* 예: padding-left/right은 100~340px 사이에서 자연 변환 */
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: clamp(100px, 8vw, 340px);
   padding-right: clamp(100px, 8vw, 340px);
 
-  /* gap도 마찬가지 */
   gap: clamp(40px, 5vw, 60px);
+} */
+
+.boardSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  flex: 1 0 0;
 }
 
 .infoBar {

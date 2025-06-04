@@ -64,8 +64,8 @@ export default function FreeBoardPageTemplate() {
   const isMobile = useIsMobile();
 
   return (
-    <div className="free-board-page-template">
+    <>
       {isMobile ? <FreeBoardMobile posts={dummyPosts} /> : <FreeBoardDesktop posts={dummyPosts} />}
-    </div>
+    </>
   );
 }
