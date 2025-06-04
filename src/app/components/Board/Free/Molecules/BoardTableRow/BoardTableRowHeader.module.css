@@ -6,7 +6,9 @@
     align-self: stretch;
     border-left: none;
     border-right: none;
-    
+    border-bottom: 1.5px solid #5B5B5B;
+    background: #FFF;
+
     /* text styles */
     color: #7C7C7C;
     text-align: center;

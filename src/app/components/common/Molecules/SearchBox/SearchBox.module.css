@@ -1,23 +1,4 @@
 /* src/app/components/common/Atoms/InputWithIcon/InputWithIcon.module.css */
-/* .searchBox {
-    display: flex;
-    width: 264px;
-    padding: 10px 20px;
-
-    border-radius: 10px;
-    border: none;
-    background: #F8F8F8;
-
-    color: #B2B2B2;
-    text-align: left;
-    font-family: Pretendard;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0.16px;
-} */
-
 .searchBox {
     display: flex;
     width: 264px;
@@ -31,10 +12,11 @@
 
 .searchInput {
     border-radius: 10px;
-    border: none;
     background: #F8F8F8;
+    border: none;
+    outline: none;
 
-    color: #B2B2B2;
+    color: #000;
     text-align: left;
     font-family: Pretendard;
     font-size: 14px;
