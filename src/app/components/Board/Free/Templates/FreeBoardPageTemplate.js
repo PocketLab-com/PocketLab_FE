@@ -61,11 +61,13 @@ const dummyPosts = [
 ];
 
 export default function FreeBoardPageTemplate() {
-  const isMobile = useIsMobile();
+  const { IsMobile, IsHydrated } = useIsMobile(900);
+
+  if (!IsHydrated) return null;
 
   return (
     <>
-      {isMobile ? <FreeBoardMobile posts={dummyPosts} /> : <FreeBoardDesktop posts={dummyPosts} />}
+      {IsMobile ? <FreeBoardMobile posts={dummyPosts} /> : <FreeBoardDesktop posts={dummyPosts} />}
     </>
   );
 }

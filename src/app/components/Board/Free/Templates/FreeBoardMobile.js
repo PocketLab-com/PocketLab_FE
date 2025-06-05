@@ -4,7 +4,7 @@ import FreeBoardListTableMobile from "@/app/components/Board/Free/Organisms/Free
 export default function FreeBoardMobile({ posts }) {
     return (
         <div className="free-board-mobile">
-            <NavBarMobile />
+            <NavBarMobile titleText="커뮤니티" />
             <FreeBoardListTableMobile posts={posts} />
         </div>
     );

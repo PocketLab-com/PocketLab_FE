@@ -18,15 +18,114 @@
 
 ```
 public/                     # 이미지 리소스 디렉토리
-src/
-├── app/                    # Next.js App Router 디렉토리
-│   ├── page.js             # 메인 페이지
-│   ├── components/         # Atomic Design 기준 컴포넌트
-│   │   ├── atoms/          # 최소 UI 요소들
-│   │   ├── molecules/      # atoms 조합 단위
-│   │   ├── organisms/      # 실제 UI 블록 단위
-│   │   ├── templates/      # 전체 레이아웃 구성
-│   ├── globals.css         # 글로벌 스타일 (Tailwind 등)
+src/app/
+├── (routing)/
+│   ├── board/
+│   │   └── free/
+│   │       └── page.js
+│   └── login/
+│       ├── page.js
+│       └── login.module.css
+│
+├── components/
+│   ├── Board/
+│   │   ├── Common/
+│   │   │   ├── Molecules/
+│   │   │   │   └── Navigation/
+│   │   │   │       ├── Navigation.js
+│   │   │   │       └── Navigation.module.css
+│   │   │   └── Organisms/
+│   │   │       └── MenuList/
+│   │   │           ├── MenuList.js
+│   │   │           └── MenuList.module.css
+│   │   └── Free/
+│   │       ├── Atoms/
+│   │       ├── Molecules/
+│   │       │   ├── BoardTableHeader/
+│   │       │   │   ├── BoardTableHeader.js
+│   │       │   │   ├── BoardTableHeader.module.css
+│   │       │   │   └── MobileBoardTableHeader.js
+│   │       │   ├── BoardTableRow/
+│   │       │   │   ├── BoardTableRow.js
+│   │       │   │   ├── BoardTableRow.module.css
+│   │       │   │   ├── BoardTableRowHeader.js
+│   │       │   │   └── BoardTableRowHeader.module.css
+│   │       │   ├── MobileBoardRow/
+│   │       │   │   ├── MobileBoardRow.js
+│   │       │   │   └── MobileBoardRow.module.css
+│   │       │   ├── Notice/
+│   │       │   │   ├── Notice.js
+│   │       │   │   └── Notice.module.css
+│   │       │   └── PostsPerPageDropdown/
+│   │       │       ├── PostsPerPageDropdown.js
+│   │       │       └── PostsPerPageDropdown.module.css
+│   │       ├── Organisms/
+│   │       │   ├── FreeBoardListTable/
+│   │       │   │   ├── FreeBoardListTable.js
+│   │       │   │   └── FreeBoardListTable.module.css
+│   │       │   └── FreeBoardListTableMobile/
+│   │       │       ├── FreeBoardListTableMobile.js
+│   │       │       └── FreeBoardListTableMobile.module.css
+│   │       └── Templates/
+│   │           ├── FreeBoardDesktop.module.css
+│   │           ├── FreeBoardMobile.js
+│   │           ├── FreeBoardPageTemplate.js
+│   │           └── FreeBoearDesktop.js
+│   ├── common/
+│   │   ├── Atoms/
+│   │   │   ├── Button/
+│   │   │   │   ├── Button.js
+│   │   │   │   └── Button.module.css
+│   │   │   └── Input/
+│   │   │       ├── Input.js
+│   │   │       └── Input.module.css
+│   │   ├── Molecules/
+│   │   │   └── SearchBox/
+│   │   │       ├── SearchBox.js
+│   │   │       └── SearchBox.module.css
+│   │   └── Organisms/
+│   │       └── NavBar/
+│   │           ├── NavBar.js
+│   │           ├── NavBarDesktop.js
+│   │           ├── NavBarDesktop.module.css
+│   │           ├── NavBarMobile.js
+│   │           └── NavBarMobile.module.css
+│   ├── DeckBuilder/
+│   │   ├── Atoms/
+│   │   │   ├── AddButton/
+│   │   │   ├── CardFrame/
+│   │   │   ├── CircleLabel/
+│   │   │   └── Label/
+│   │   ├── Molecules/
+│   │   │   ├── CardGrid/
+│   │   │   ├── SelectableCard/
+│   │   │   ├── SelectedPanel/
+│   │   │   └── ToggleSection/
+│   │   ├── Organisms/
+│   │   │   ├── CardCollection/
+│   │   │   ├── InfoPanel/
+│   │   │   ├── PreferenceSelector/
+│   │   │   ├── SelectedPocketmonBox/
+│   │   │   └── SpeciesCircleChart/
+│   │   └── Templates/
+│   │       └── MainLayout/
+│   └── Login/
+│       ├── Atoms/
+│       ├── Molecules/
+│       ├── Organisms/
+│       └── Templates/
+│           ├── LoginForm.js
+│           └── LoginForm.module.css
+│
+├── hook/
+│   └── useIsMobile.js
+│
+├── favicon.ico
+├── globals.css
+├── layout.js
+├── page.js
+└── TiltInitializer.js
+
 ```
 
 ---
