@@ -5,6 +5,7 @@ import BoardTableHeader from '@/app/components/Board/Free/Molecules/BoardTableHe
 import BoardTableRowHeader from '@/app/components/Board/Free/Molecules/BoardTableRow/BoardTableRowHeader';
 import BoardTableRow from '@/app/components/Board/Free/Molecules/BoardTableRow/BoardTableRow';
 import PostsPerPageDropdown from '@/app/components/Board/Free/Molecules/PostsPerPageDropdown/PostsPerPageDropdown';
+import Navgation from '@/app/components/Board/Common/Molecules/Navigation/Navigation';
 import { useState } from 'react';
 
 /**
@@ -44,6 +45,13 @@ export default function FreeBoardListTable({ posts }) {
           <BoardTableRow key={post.id} row={post} />
         ))}
       </div>
+      <Navgation
+        currentPage={1}
+        totalPages={Math.ceil(normalPosts.length / postsPerPage)}
+        onPageChange={(page) => {
+          console.log(`페이지 변경: ${page}`);
+        }}
+      />
     </section>
   );
 }

@@ -1,8 +1,12 @@
-// src/app/components/BoardFree/Organisms/NavBar/NavBarDesktop.js
+// src/app/components/BoardFree/Organisms/NavBar/NavBarDesktop.js]
+"use client";
+import { useRouter } from "next/navigation";
 import desktopStyle from './NavBarDesktop.module.css';
 import Button from '@/app/components/common/Atoms/Button/Button';
 
 export default function NavBarDesktop() {
+  const router = useRouter();
+
   return (
     <nav className={desktopStyle.desktopNavbar}>
       <div className={desktopStyle.left}>
@@ -11,16 +15,22 @@ export default function NavBarDesktop() {
         </Button>
       </div>
       <div className={desktopStyle.mid}>
-        <Button className={`${desktopStyle.midItemDrop} ${desktopStyle.HeaderButton}`}>커뮤니티<ArrowIcon /></Button>
+        <Button className={`${desktopStyle.midItemDrop} ${desktopStyle.HeaderButton}`} onClick={() => router.push("/board/free")}>커뮤니티<ArrowIcon /></Button>
         <Button className={`${desktopStyle.midItem} ${desktopStyle.HeaderButton}`}>덱빌더</Button>
         <Button className={`${desktopStyle.midItem} ${desktopStyle.HeaderButton}`}>공지사항</Button>
       </div>
       <div className={desktopStyle.right}>
-        <Button className={`${desktopStyle.loginButton} ${desktopStyle.HeaderButton}`}>로그인</Button>
+        <Button
+          className={`${desktopStyle.loginButton} ${desktopStyle.HeaderButton}`}
+          onClick={() => router.push("/login")}
+        >
+          로그인
+        </Button>
       </div>
     </nav>
   );
 }
+
 
 function ArrowIcon({ width = 22, height = 22, stroke = "#3E3E3E", ...props }) {
   return (
