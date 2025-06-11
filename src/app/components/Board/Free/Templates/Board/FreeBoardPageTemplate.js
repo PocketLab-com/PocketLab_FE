@@ -1,8 +1,8 @@
 // src/app/components/BoardFree/Templates/FreeBoardPageTemplate/FreeBoardPageTemplate.js
 "use client";
 import useIsMobile from "@/app/hook/useIsMobile";
-import FreeBoardDesktop from "./FreeBoearDesktop";
-import FreeBoardMobile from "./FreeBoardMobile";
+import FreeBoardDesktop from "./FreeBoearDesktop.js";
+import FreeBoardMobile from "./FreeBoardMobile.js";
 
 const dummyPosts = [
    {
