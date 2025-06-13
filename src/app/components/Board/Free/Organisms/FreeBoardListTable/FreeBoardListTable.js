@@ -1,7 +1,7 @@
 "use client";
 import styles from './FreeBoardListTable.module.css';
 import Notice from '@/app/components/Board/Free/Molecules/Notice/Notice';
-import BoardTableHeader from '@/app/components/Board/Free/Molecules/BoardTableHeader/BoardTableHeader';
+import BoardHeader from '@/app/components/Board/Common/Molecules/BoardHeader/BoardHeader';
 import BoardTableRowHeader from '@/app/components/Board/Free/Molecules/BoardTableRow/BoardTableRowHeader';
 import BoardTableRow from '@/app/components/Board/Free/Molecules/BoardTableRow/BoardTableRow';
 import PostsPerPageDropdown from '@/app/components/Board/Free/Molecules/PostsPerPageDropdown/PostsPerPageDropdown';
@@ -29,7 +29,7 @@ export default function FreeBoardListTable({ posts }) {
   return (
     <section className={styles.boardSection}>
       {/* <Notice /> */}
-      <BoardTableHeader />
+      <BoardHeader />
       <div className={styles.infoBar}>
         <span>게시물 총 {posts.length}개</span>
         <PostsPerPageDropdown value={postsPerPage} onChange={setPostsPerPage} />

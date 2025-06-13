@@ -1,6 +1,6 @@
 "use client";
 import FBLTMStyle from './FreeBoardListTableMobile.module.css';
-import MobileBoardTableHeader from '@/app/components/Board/Free//Molecules/BoardTableHeader/MobileBoardTableHeader';
+import MobileBoardHeader from '@/app/components/Board/Common/Molecules/BoardHeader/MobileBoardHeader';
 import MobileBoardRow from '@/app/components/Board/Free/Molecules/MobileBoardRow/MobileBoardRow';
 
 export default function FreeBoardListTableMobile({ posts }) {
@@ -15,7 +15,7 @@ export default function FreeBoardListTableMobile({ posts }) {
 
   return (
     <div className={FBLTMStyle.freeBoardListTableMobile}>
-      <MobileBoardTableHeader />
+      <MobileBoardHeader />
       <div className={FBLTMStyle.boardTable}>
         {numberedPosts.map((post) => (
           <MobileBoardRow key={post.id} row={post} isNotice={post.isNotice} />
