@@ -1,12 +1,12 @@
 "use client";
+import MobileBoardLayoutStyles from "./MobileLayout.module.css";
 import NavBarMobile from "@/app/components/common/Organisms/NavBar/NavBarMobile";
-import FreeBoardListTableMobile from "@/app/components/Board/Free/Organisms/FreeBoardListTableMobile/FreeBoardListTableMobile";
 
 export default function MobileLayout({ children }) {
     return (
-        <div className="mobile-layout">
+        <div className={MobileBoardLayoutStyles.boardLayoutWrapper}>
             <NavBarMobile titleText="커뮤니티" />
-            <FreeBoardListTableMobile posts={children} />
+            {children}
         </div>
     );
 }
