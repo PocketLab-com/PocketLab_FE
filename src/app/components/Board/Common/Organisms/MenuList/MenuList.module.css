@@ -40,6 +40,12 @@
     line-height: normal;
 }
 
+.menuButton:hover {
+    background-color: #F2F8FF; /* 원하는 hover 색상 */
+    cursor: pointer;
+}
+
+
 .selected {
     background-color: #F2F8FF;
 }
