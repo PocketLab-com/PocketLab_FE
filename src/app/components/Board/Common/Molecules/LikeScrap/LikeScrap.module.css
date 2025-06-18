@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.iconButton {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 5px;
+
+    background: none;
+    border: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
+}
+
+.count {
+    color: #7C7C7C;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

@@ -1,7 +1,7 @@
 // src/app/(routing)/board/DeskLayout.js
 "use client";
 import { usePathname } from "next/navigation";
-import NavBar from '@/app/components/common/Organisms/NavBar/NavBar';
+import NavBar from '@/app/components/common/Organisms/NavBar/DesktopNavBar';
 import MenuList from "@/app/components/Board/Common/Organisms/MenuList/MenuList";
 import DeskBoardLayoutStyles from './DeskLayout.module.css';
 

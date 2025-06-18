@@ -1,6 +1,21 @@
-import PostDetailPageTemplate from '@/app/components/Board/Free/Templates/Post/PostDetailPageTemplate';
+// src/app/board/free/page.js
+"use client";
+import useIsMobile from "@/app/hook/useIsMobile";
+import PostDetailDesk from "@/app/components/Board/Free/Templates/Post/PostDetailPageTemplateDesk";
+import PostDetailMobile from "@/app/components/Board/Free/Templates/Post/PostDetailPageTemplateMobile";
 
-export default function PostDetailPage({ params }) {
-  // Next.js 15 App Router: params.postId 사용
-  return <PostDetailPageTemplate postId={params.postId} />;
+export default function FreeBoardPage() {
+  const { isMobile, isHydrated } = useIsMobile(900);
+
+  if (!isHydrated) return null;
+
+  return (
+    <>
+      {isMobile ? (
+        <PostDetailMobile postId={0} />
+      ) : (
+        <PostDetailDesk postId={0} />
+      )}
+    </>
+  );
 }

@@ -1,7 +1,10 @@
 .desktopNavbar {
   display: flex;
   height: 78px;
-  padding: 20px 98px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: clamp(60px, 15.6vw, 250px);
+  padding-right: clamp(60px, 15.6vw, 250px);
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;

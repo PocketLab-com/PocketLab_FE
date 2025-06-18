@@ -1,6 +1,6 @@
 "use client";
 import LoginFormMobileStyle from './LoginFormMobile.module.css';
-import NavBarMobile from '../../common/Organisms/NavBar/NavBarMobile';
+import NavBarMobile from '../../common/Organisms/NavBar/MobileNavBar';
 import Button from '@/app/components/common/Atoms/Button/Button';
 
 export default function LoginFormMobile() {

@@ -1,6 +1,6 @@
 "use client";
 import MobileBoardLayoutStyles from "./MobileLayout.module.css";
-import NavBarMobile from "@/app/components/common/Organisms/NavBar/NavBarMobile";
+import NavBarMobile from "@/app/components/common/Organisms/NavBar/MobileNavBar";
 
 export default function MobileLayout({ children }) {
     return (

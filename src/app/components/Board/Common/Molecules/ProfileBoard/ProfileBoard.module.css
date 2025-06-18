@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1 0 0;
+}
+
+.profileImage {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    aspect-ratio: 1/1;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.profileNick {
+    color: #000;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.boardStats {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.boardStat {
+    color: #7C7C7C;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

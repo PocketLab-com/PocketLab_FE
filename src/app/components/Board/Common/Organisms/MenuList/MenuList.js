@@ -22,7 +22,7 @@ export default function MenuList({ menus = [], selected }) {
                     type="button"
                 >
                     {menu.label}
-                </Button>
+                </Button>   
             ))}
         </div>
     );

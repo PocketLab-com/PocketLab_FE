@@ -24,6 +24,8 @@
     width: 40px;
     height: 40px;
     aspect-ratio: 1/1;
+  background: none;
+  border: none;
 }
 
 .mobileTitle {
@@ -65,6 +67,8 @@
     width: 40px;
     height: 40px;
     aspect-ratio: 1/1;
+    background: none;
+    border: none;
 }
 
 .mobileBottom {
@@ -80,4 +84,13 @@
     padding: 10px;
     align-items: flex-start;
     gap: 10px;
+    background: none;
+    border: none;
+  
+    color: #3E3E3E;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }

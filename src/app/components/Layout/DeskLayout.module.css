@@ -6,10 +6,10 @@
 
 .boardLayoutBody {
     display: flex;
-    padding-top: clamp(80px, 7.8vw, 150px);
-    padding-bottom: clamp(80px, 4.2vw, 80px);
-    padding-left: clamp(80px, 15.6vw, 300px);
-    padding-right: clamp(80px, 15.6vw, 300px);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: clamp(60px, 15.6vw, 250px);
+    padding-right: clamp(60px, 15.6vw, 250px);
     justify-content: center;
     align-items: flex-start;
     gap: 60px;

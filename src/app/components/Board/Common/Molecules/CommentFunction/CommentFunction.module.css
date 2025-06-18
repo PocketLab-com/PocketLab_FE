@@ -1,0 +1,18 @@
+.commentFunction {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.btn {
+    color: #7C7C7C;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    border: none;
+    cursor: pointer;
+    background: none;
+}

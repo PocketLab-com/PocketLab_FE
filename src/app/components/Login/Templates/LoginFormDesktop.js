@@ -1,7 +1,7 @@
 "use client";
 import LoginFormDeskStyle from './LoginFormDesktop.module.css';
 import Button from '@/app/components/common/Atoms/Button/Button';
-import NavBarDesktop from '@/app/components/common/Organisms/NavBar/NavBarDesktop';
+import NavBarDesktop from '@/app/components/common/Organisms/NavBar/DesktopNavBar';
 
 export default function LoginForm() {
     return (

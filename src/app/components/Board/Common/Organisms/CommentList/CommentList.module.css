@@ -1,0 +1,17 @@
+.title {
+    display: flex;
+    padding: 20px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+    border-top: 1px solid #F5F5F5;
+    background: #FFF;
+
+    color: #000;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
