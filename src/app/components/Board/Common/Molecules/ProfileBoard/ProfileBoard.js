@@ -6,7 +6,7 @@ export default function ProfileBoard({ nickName, time, viewCount, title }) {
     <div className={ProfileBoardStyle.container}>
         <img
           className={ProfileBoardStyle.profileImage}
-          src="/images/profile.svg"
+          src="/profile.svg"
           alt="프로필 이미지"
         />
         <div className={ProfileBoardStyle.profileInfo}>
