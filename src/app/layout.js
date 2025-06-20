@@ -1,5 +1,7 @@
 import "./globals.css";
 import TiltInitializer from "./TiltInitializer";
+// src/app/global.css 또는 layout.js 에서
+import 'react-quill-new/dist/quill.snow.css';
 
 export const metadata = {
   title: "Create Next App",

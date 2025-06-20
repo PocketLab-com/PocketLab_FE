@@ -1,0 +1,32 @@
+.editorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex: 1 0 0;
+}
+
+.subtitle {
+  width: 35px;
+
+  color: #3E3E3E;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 112.5% */
+  letter-spacing: 0.16px;
+}
+
+.titleInput {
+  display: flex;
+  padding: 10px 15px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+
+  border-radius: 4px;
+  border: 1px solid #EEE;
+  background: #FCFCFC;
+}
